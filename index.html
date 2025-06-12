@@ -305,9 +305,8 @@
     }
 window.addEventListener("DOMContentLoaded", () => {
   const audio = document.getElementById("bg-music");
-  audio.volume = 0.3; // Volume entre 0 e 1
+  audio.volume = 0.3;
 
-  // Toca assim que a interação do usuário ocorrer
   document.body.addEventListener("click", () => {
     if (audio.paused) {
       audio.play().catch(() => {});
